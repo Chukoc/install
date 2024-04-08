@@ -2,7 +2,7 @@
 OS="$(uname)"
 if [ "${OS}" == "Darwin" ]; then
     # macOS
-    cd /Application/Arduino\ IDE.app/Contents/Resources/app/plugins
+    cd /Applications/Arduino\ IDE.app/Contents/Resources/app/plugins
     if [ $? -ne 0 ]; then
         echo TAを読んでください
         exit 1
