@@ -7,7 +7,8 @@ if [ "${OS}" == "Darwin" ]; then
         echo TAを読んでください
         exit 1
     fi
-    curl 
+    # curl 
+    curl -sLJO https://github.com/Chukoc/install/releases/download/Test/ino-smell-detector-win.tar.gz
     tar -xzf file.tar.gz && rm file.tar.gz
 else 
     # plugins folderにいく
