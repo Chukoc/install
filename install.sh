@@ -1,15 +1,13 @@
 #!/bin/bash -v
 OS="$(uname)"
-if [ "${OS}" == "Linux"]
-    # linux
-elif ["${OS}" == "Darwin"]
+if ["${OS}" == "Darwin"]
     # macOS
     cd /Application/Arduino\ IDE.app/Contents/Resources/app/plugins
     if [ $? -ne 0 ]; then
         echo TAを読んでください
         exit 1
     fi
-    curl
+    curl 
     tar -xzf file.tar.gz && rm file.tar.gz
 else 
     # plugins folderにいく
