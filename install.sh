@@ -14,7 +14,9 @@ else
     # plugins folderにいく
     if   [ -e /c/Users/$(whoami)/AppData/Local/Programs/arduino-ide ]; then
 
-        cd /c/Uesrs/$(whoami)/AppData/Local/Programs/arduino-ide/resources/app/plugins 
+        # cd /c/Uesrs/$(whoami)/AppData/Local/Programs/arduino-ide/resources/app/plugins 
+        cd /c/Users/$(whoami)/AppData/Local/Programs/arduino-ide/resources/app/plugins
+	
         if [ $? -ne 0 ]; then
             echo TAを呼んでください
             exit 1
