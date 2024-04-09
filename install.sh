@@ -13,16 +13,17 @@ if [ "${OS}" == "Darwin" ]; then
 else 
     # plugins folderにいく
     if   [ -e /c/Users/$(whoami)/AppData/Local/Programs/arduino-ide ]; then
+
         cd /c/Uesrs/$(whoami)/AppData/Local/Programs/arduino-ide/resources/app/plugins 
         if [ $? -ne 0 ]; then
-            echo TAを読んでください
+            echo TAを呼んでください
             exit 1
         fi
     elif [ -e /c/Users/$(whoami)/AppData/Local/Programs/Arduino\ IDE ]; then
         # cd C:/Uesrs/$(whoami)/AppData/Local/Programs/Arduino\ IDE/resources/app/plugins 
         cd /c/Users/$(whoami)/AppData/Local/Programs/Arduino\ IDE/resources/app/plugins
         if [ $? -ne 0 ]; then
-            echo TAを読んでください 
+            echo TAを呼んでください 
             exit 1
         fi
     else
