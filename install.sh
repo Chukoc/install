@@ -8,8 +8,9 @@ if [ "${OS}" == "Darwin" ]; then
         exit 1
     fi
     # curl 
-    curl -sLJO https://github.com/Chukoc/install/releases/download/Test/ino-smell-detector-win.tar.gz
-    tar -xzf file.tar.gz && rm file.tar.gz
+    curl -sLJO https://github.com/Chukoc/install/releases/download/ide-extension/ino-smell-detector-mac.tar.gz
+    tar -xzf ino-smell-detector-mac.tar.gz && rm ino-smell-detector-mac.tar.gz
+    echo Installed Successfully
 else 
     # plugins folderにいく
     if   [ -e /c/Users/$(whoami)/AppData/Local/Programs/arduino-ide ]; then
@@ -31,7 +32,8 @@ else
         exit 1
     fi
 
-    curl -sLJO https://github.com/Chukoc/install/releases/download/Test/ino-smell-detector-win.tar.gz
+    curl -sLJO https://github.com/Chukoc/install/releases/download/ide-extension/ino-smell-detector-win.tar.gz
     tar -xaf ino-smell-detector-win.tar.gz && rm ino-smell-detector-win.tar.gz
+    echo Installed Successfully
 fi
 
