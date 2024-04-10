@@ -4,7 +4,7 @@ if [ "${OS}" == "Darwin" ]; then
     # macOS
     cd /Applications/Arduino\ IDE.app/Contents/Resources/app/plugins
     if [ $? -ne 0 ]; then
-        echo TAを読んでください
+        echo TAを呼んでください
         exit 1
     fi
     # curl 
@@ -30,7 +30,7 @@ else
             exit 1
         fi
     else
-        echo TAを呼んでください． 
+        echo TAを呼んでください
         exit 1
     fi
 
